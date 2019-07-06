@@ -1,0 +1,359 @@
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-size: 32px;
+	color: #000000;
+}
+
+h2{
+	text-align: center;/*
+	padding-top: 48px;*/
+	color: #007765;
+	font-weight: 500;
+	font-size: 64px;
+}
+
+h3{
+	color: #007765;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width: 699px) {
+	p{
+	font-size: 24px;		
+	}
+
+	h2{
+		font-size: 48px;
+	}
+
+	h3{
+		font-size: 18px;
+	}
+}
+
+.wrapper{
+	width: 1219px;
+	/*width: 100%;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 699px) {
+	.wrapper{
+		width: 100%;	
+	}
+}
+
+
+
+/*
+
+		HEADER
+
+*/
+
+.header{
+	/*position: fixed;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-weight: 500;
+	font-size: 24px;
+	background-color: #007765;
+}
+
+.logo{
+	padding: 20px 0 0 55px;
+}
+
+.logo a{
+	display: block;
+}
+
+.nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/*padding: 28px 54px 0 0;*/
+}
+
+/*.nav a{
+	display: block;
+	color: #FFFFFF;
+	padding: 28px 8px 26px 8px;
+	border-right: 2px solid white;
+}*/
+
+.nav li{
+	display: block;
+	padding: 28px 0 26px 0;
+}
+
+.nav a{
+	display: block;
+	color: #FFFFFF;
+	padding: 0 8px 0 8px;
+	border-right: 2px solid white;
+}
+
+.nav a:hover{
+	background-color: #258273;
+}
+
+.nav label:last-child a{
+	border: none;
+}
+
+.nav label:last-child{
+	padding-right: 54px;
+}
+
+@media (max-width: 700px){
+	
+	.header{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo{
+		padding: 15px 0 0 0;
+	}
+	
+	.nav ul{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.nav label{
+		display: block;
+		width: 100%;
+	}
+
+	.nav label:last-child{
+		padding-right: 0px;
+	}
+
+	.nav a{
+		text-align: center;
+		border: none;
+	}
+}
+/*
+
+		HEADER
+
+*/
+
+
+/*
+
+		THE PROBLEM
+
+*/
+
+.theproblem{
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 48px 55px 76px 55px;
+}
+
+.theproblem p{
+	padding: 16px 0;
+}
+
+@media screen and (max-width: 699px) {
+	.theproblem{
+		padding: 25px 10px 35px 10px;
+	}
+
+	.theproblem p{
+		padding: 10px 0;
+	}
+}
+
+/*.theproblem p:last-child{
+	padding: 0;
+}
+*/
+/*
+
+		THE PROBLEM
+
+*/
+
+
+/*
+
+		INDTRODUCING
+
+*/
+
+.ppc{
+	background-color: white;
+	padding: 44px 55px 72px 55px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ppc .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.ppc p{
+	padding: 20px 0; 
+}
+
+.ppc img{
+	margin-top: 20px;
+	margin-right: 48px;
+	float: left;
+}
+
+@media screen and (max-width: 699px) {
+	
+	.ppc{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	.ppc p{
+		padding: 10px 0;
+	}
+
+	.ppc img{
+		margin-right: 15px;
+		width: 65px;		
+	}
+}	
+/*
+
+		INDTRODUCING
+
+*/
+
+
+/*
+
+		TEAM
+
+*/
+
+.team{
+	background-color: #EEEEEE;
+	padding: 50px 0 79px 0;
+
+}
+
+.team .container{
+	padding: 0 55px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.team_member{
+	box-sizing: content-box; 
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*padding: 24px 91px 28px 91px;*/
+	margin-top: 30px;
+}
+
+
+.team_member:first-child, .team_member:nth-child(4){
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.team_member:last-child, .team_member:nth-child(3){
+	padding-right: 0;
+	margin-right: 0px;
+}
+
+.team p{
+	font-style: italic;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+}
+
+@media screen and (max-width: 699px) {
+	.team .container{
+		padding-left: 10px;
+		padding-right: 10px;
+		justify-content: center;
+	}
+
+	.team_member{
+		width: 200px;
+	}
+	
+	.team p{
+		font-size: 14px;
+	}
+}
+
+
+/*
+
+		TEAM
+
+*/
+
+/*
+
+		FOOTER
+
+*/
+
+.footer{
+	background-color: #333333;
+	padding: 48px 340px 64px 340px; 
+}
+
+.footer p{
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media screen and (max-width: 699px) {
+	.footer{
+	padding-right: 10px;
+	padding-left: 10px;
+	}
+
+	.footer p{
+		font-size: 14px;
+	}
+}	
+
+/*
+
+		FOOTER
+
+*/
